@@ -1,16 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View ,Image} from 'react-native';
+import { StyleSheet, Text, View ,Image,Button,Pressable} from 'react-native';
 import ES from './ES';
 import HomePic from '../assets/HomePic.svg';
-
-const MyButton = () => {
+import Logincss from './Logincss';
+const MyButton = ({onPress,text}) => {
     return (
-      <View style={ES.container}>
-   <img src={HomePic} alt="lap"/>
-      <View style ={ES.welcom}>
-          <Text style = {ES.title}> FrontLine Technology solutoins</Text>
-          <Text style = {ES.subtitle}> Get started</Text>
-          </View></View>
+   <Pressable  onPress={onPress} style={Logincss.btn} >
+       <Text style={Logincss.Text}> {text}</Text>
+       </Pressable>
           );
 
 

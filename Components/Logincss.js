@@ -12,14 +12,17 @@ const ES = StyleSheet.create({
     color:'#ffffff', 
     fontWeight:'bold',
     fontSize :50,
-    marginTop: '50%',
-  alignItems: 'center',  
+    marginTop: '20%',
+  alignItems: 'center', 
+  marginBottom:'1%' 
 
   },
 
+  l:{ color:'#ffffff', },
+
   photo:{
     maxHeight:200,
-    marginTop: '40%',
+    marginTop: '8%',
   },
   input:{
    
@@ -41,22 +44,33 @@ backgroundColor:'#ffffff',
     alignItems: 'center',
     width :'100%'
   },
-  title:
-  {
-   fontSize :40,
-   fontWeight:'bold',
-  color:'#ffffff',
-marginBottom:'15%'
-  }
-,
-  subtitle:
-  {
-    fontSize :25,
-   fontWeight:'200',
-  color:'#ffffff',
-  marginTop: '25%',
+
+btn:{
+
+    width:'50%',
+    height:47,
+
+    backgroundColor :'#3B7190',
+       borderColor :'#ffffff',
+      borderWidth:2,
+       borderRadius :22,
+       padding:12,
+       marginTop: '5%',
+       marginVertical:20,
+       alignItems: 'center',
+    fontWeight:'bold',
+    color:'white',
+    textAlign:'center',
+    overflow: 'hidden',
+    
+    
    
-  },
+    },
+    Text:{
+        color:'white',  
+        alignItems: 'center',
+        fontWeight:'bold',
+    }
 
 });
 export default ES;
